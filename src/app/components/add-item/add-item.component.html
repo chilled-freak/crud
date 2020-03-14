@@ -1,0 +1,34 @@
+<div class="card">
+    <div class="card-content">
+        <h1 class="text-center text-danger">Add Item</h1>
+        <form (ngSubmit)="onSubmit()">
+            <div class="row mb-1 ml-2">
+                <div class="col-6">
+                    <label>Title</label>
+                </div>
+
+                <div class="col-6">
+                    <label>Description</label>
+                </div>
+            </div>
+
+            <div class="row mb-4 ml-2">
+                <div class="col-6">
+                    <input type="text" placeholder="Add Title" [(ngModel)]="item.title" name="title" />
+                </div>
+
+                <div class="col-6">
+                    <input type="text" placeholder="Add Description" [(ngModel)]="item.description"
+                        name="description" />
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <button class="btn bg-success">ADD ITEM</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
